@@ -44,7 +44,7 @@ export default function Footer() {
           <div className="space-y-4 xl:col-span-2">
             <Link href={createHref("/")}>
               <span className="sr-only">Patrik Pilčík</span>
-              <img src="pp-dev/public/images/profile.jpg" className="h-10 w-10 rounded-full text-gray-600 object-cover" />
+              <img src="/images/profile.jpg" className="h-10 w-10 rounded-full text-gray-600 object-cover" />
             </Link>
             <p className="max-w-xs text-sm text-gray-500">
               Tvorba webů, webových prací, tvorba eshopů a grafických prací.
