@@ -62,7 +62,7 @@ export default function Nav() {
             }
           >
             <img
-              src="pp-dev/public/images/profile.jpg"
+              src="/images/profile.jpg"
               alt="Pilčík Patrik"
               className="w-8 h-8 rounded-full object-cover object-center"
             />
