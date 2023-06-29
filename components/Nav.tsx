@@ -56,13 +56,11 @@ export default function Nav() {
         <div className="flex h-14 items-center justify-between">
           <Link
             href={
-              domain === "dub.sh"
-                ? "/"
-                : `https://dub.sh?utm_source=${domain}&utm_medium=referral&utm_campaign=custom-domain`
+              "/"
             }
           >
             <img
-              src="/images/profile.jpg"
+              src="images/profile.jpg"
               alt="Pilčík Patrik"
               className="w-8 h-8 rounded-full object-cover object-center"
             />
