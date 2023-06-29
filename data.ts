@@ -6,7 +6,7 @@ export const projects: IProject[] = [
       name: "HsPro - Stavební firma",
       description:
         "Webová stránka pro stavební firmu. Stránka byla vytvořena pomocí CMS systému Wordpress. Byl vytvořen grafický návrh a zajištěn hosting s doménou. Na stránce bylo také provedeno kompletní SEO. ",
-      image_path: "/images/web-hspro.png",
+      image_path: "images/web-hspro.png",
       deployed_url: "https://hspro.cz/",
       github_url: "https://github.com/pilcikpatrik",
       category: ["Weby"],
@@ -17,7 +17,7 @@ export const projects: IProject[] = [
     },
     {
       name: "JP - Zednicke Práce ",
-      image_path: "/images/web-jp.png",
+      image_path: "images/web-jp.png",
       deployed_url: "https://visual-algorithm.web.app/",
       github_url: "https://github.com/pilcikpatrik",
       category: ["Weby"],
@@ -31,7 +31,7 @@ export const projects: IProject[] = [
   
     {
       name: "C.I.S. - Vývoj softwaru",
-      image_path: "/images/web-cis.png",
+      image_path: "images/web-cis.png",
       deployed_url: "https://dev-talks.herokuapp.com/",
       github_url: "https://github.com/pilcikpatrik",
       category: ["Weby"],
@@ -50,7 +50,7 @@ export const projects: IProject[] = [
   
     {
       name: "Logo - JPZednictvi",
-      image_path: "/images/jp-logo.svg",
+      image_path: "images/jp-logo.svg",
       deployed_url: "https://sumit-chat.netlify.app/",
       github_url: "",
       category: ["Loga"],
@@ -64,7 +64,7 @@ export const projects: IProject[] = [
   
     {
       name: "Logo - Tesařství A&K",
-      image_path: "/images/ak-logo.svg",
+      image_path: "images/ak-logo.svg",
       deployed_url: "http://sumaxtweetme.pythonanywhere.com/",
       github_url: "",
       category: ["Loga"],
@@ -78,7 +78,7 @@ export const projects: IProject[] = [
   
     {
       name: "Logo - Krowka.cz",
-      image_path: "/images/krowka-logo.svg",
+      image_path: "images/krowka-logo.svg",
       deployed_url: "!#",
       github_url: "",
       category: ["Loga"],
@@ -91,7 +91,7 @@ export const projects: IProject[] = [
     },
     {
       name: "Grafika - HSPro",
-      image_path: "/images/hspro-letak.png",
+      image_path: "images/hspro-letak.png",
       deployed_url: "https://not-utube.web.app/",
       github_url: "",
       category: ["Tiskoviny"],
@@ -104,7 +104,7 @@ export const projects: IProject[] = [
     },
     {
       name: "Grafika - Krowka.cz",
-      image_path: "/images/krowka-brozura.png",
+      image_path: "images/krowka-brozura.png",
       deployed_url: "https://o-my-goal.web.app/",
       github_url: "",
       category: ["Tiskoviny"],
@@ -117,7 +117,7 @@ export const projects: IProject[] = [
     },
     {
       name: "Grafika - Tesařství A&K",
-      image_path: "/images/ak-letak.png",
+      image_path: "images/ak-letak.png",
       deployed_url: "https://not-utube.web.app/",
       github_url: "",
       category: ["Tiskoviny"],
