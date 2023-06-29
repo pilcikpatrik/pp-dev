@@ -1,8 +1,7 @@
 "use-client"
 import React from 'react'
-import { motion } from "framer-motion"
 import Head from 'next/head'
-import { Modal, useModal, Button, Text } from "@nextui-org/react";
+import { Modal, useModal } from "@nextui-org/react";
 
 interface SkillsProps {
     imgSrc: string;
@@ -15,10 +14,10 @@ interface SkillsProps {
   }
 
 type Props = {
-    directionLeft?: boolean
+
 }
 
-const Skills: React.FC<SkillsProps & Props> = ({ directionLeft, imgSrc, percentage, title, description, projects, experience }) => {
+const Skills: React.FC<SkillsProps> = ({ imgSrc, percentage, title, description, projects, experience }) => {
     const { setVisible, bindings } = useModal();
 
   return (
@@ -27,14 +26,7 @@ const Skills: React.FC<SkillsProps & Props> = ({ directionLeft, imgSrc, percenta
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"/>
     </Head>
     <div className='group relative flex cursor-pointer'>
-        <motion.img 
-            initial={{
-                x:directionLeft ? -200 : 200,
-                opacity: 0,
-            }}
-            transition={{ duration: 1 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
+        <img 
             src={imgSrc}
             className='rounded-full border-2 w-16 h-16 lg:w-24 lg:h-24 filter group-hover:grayscale transition duration-300 ease-in-out object-center object-contain'
         />

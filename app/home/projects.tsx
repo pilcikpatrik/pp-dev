@@ -82,7 +82,7 @@ const Projects = () => {
           ))}
         </motion.div>
         {projects.length > (isMobile ? 3 : 6) && (
-          <div className="flex justify-center">
+          <div className="flex justify-center mt-5">
             <button
               className="rounded-full border border-black bg-black px-5 py-2 text-sm text-white shadow-lg transition-all hover:bg-white hover:text-black"
               onClick={handleShowMore}

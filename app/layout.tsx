@@ -9,8 +9,8 @@ import Footer from "./home/footer";
 import MobileNav from "@/components/Mobile-nav";
 
 export const metadata = {
-  title: "Promptopia",
-  description: "Discover & Share AI Prompts",
+  title: "Pilčík Patrik",
+  description: "Web developer",
 };
 
 interface LayoutProps {

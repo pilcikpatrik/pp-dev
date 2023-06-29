@@ -2,6 +2,7 @@
 import React from 'react'
 import MaxWidthWrapper from '@/components/shared/max-width-wrapper'
 import Skill from '@/components/Skill'
+import { motion } from 'framer-motion'
 
 const skillsData = [
   {
@@ -166,6 +167,11 @@ const skillsData = [
   },
 ]
 
+const fadeIn = {
+  hidden: { opacity: 0 },
+  visible: { opacity: 1 }
+}
+
 type Props = {}
 
 const skills = (props: Props) => {
@@ -183,8 +189,17 @@ const skills = (props: Props) => {
 
       </div>
       <div className='grid grid-cols-4 gap-5 mt-10 justify-items-center md:grid-cols-5'>
-      {skillsData.map((skills, index) =>      
-        <Skill key={index} imgSrc={skills.imgSrc} percentage={skills.percentage} title={skills.title} description={skills.description} projects={skills.projects} experience={skills.experience} />
+      {skillsData.map((skills, index) =>
+        <motion.div
+              key={index}
+              variants={fadeIn}
+              initial={{ opacity: 0 }}
+              transition={{ delay: index * .05 }}
+              whileInView={{ opacity: 1 }}  // Delay each card by 0.2 seconds
+              viewport={{ once: true }}
+        >     
+          <Skill key={index} imgSrc={skills.imgSrc} percentage={skills.percentage} title={skills.title} description={skills.description} projects={skills.projects} experience={skills.experience} />
+        </motion.div> 
       )}
       </div> 
     </MaxWidthWrapper>
