@@ -6,7 +6,7 @@ import ExperienceCard from '@/components/ExperienceCard'
 
 const experienceData = [
   {
-    imgSrc: "/images/utb.png",
+    imgSrc: "pp-dev/public/images/utb.png",
     altText: "UTB",
     title: "Univerzita Tomáše Bati",
     subtitle: "Softwarové inženýrství",
@@ -14,7 +14,7 @@ const experienceData = [
     points: ["Algoritmy a datové struktury", "Objektově orientované programování", "Síťové aplikace", "Teoretická informatika", "Kryptologie", "Operační systémy" ],
   },
   {
-    imgSrc: "/images/logo-cis.png",
+    imgSrc: "pp-dev/public/images/logo-cis.png",
     altText: "CIS",
     title: "C.I.S s.r.o.",
     subtitle: "Vývoj softwaru",
@@ -22,7 +22,7 @@ const experienceData = [
     points: ["Tvorba nových features", "Psaní dokumentace a testů", "Vývoj v jazyce C#", "Práce s databází MSSQL", "Používání knihovny DevExpress a WinForms"],
   },
   {
-    imgSrc: "/images/profile.jpg",
+    imgSrc: "pp-dev/public/images/profile.jpg",
     altText: "Freelance",
     title: "Freelance",
     subtitle: "Tvorba webů a grafiky",
