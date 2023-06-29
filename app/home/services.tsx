@@ -44,7 +44,7 @@ const featureList = [
     icon: <Link2 className="h-5 w-5 text-gray-600" />,
     description:
       "Tvorba loga na míru, včetně několika verzí a barev",
-    demo: "/videos/logo.mp4",
+    demo: "pp-dev/public/videos/logo.mp4",
   },
   {
     key: "social",
@@ -52,7 +52,7 @@ const featureList = [
     icon: <Photo className="h-5 w-5 text-gray-600" />,
     description:
       "Tvorba letáku, brožur, vizitek bradu atd...",
-    demo: "/videos/graphic.mp4",
+    demo: "pp-dev/public/videos/graphic.mp4",
   },
   {
     key: "team",
