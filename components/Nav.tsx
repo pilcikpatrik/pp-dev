@@ -6,6 +6,7 @@ import useScroll from "@/lib/hooks/use-scroll";
 import clsx from "clsx";
 import MaxWidthWrapper from "@/components/shared/max-width-wrapper";
 import { useEffect } from "react";
+import { MouseEvent } from "react";
 
 const transparentHeaderSegments = new Set(["metatags", "pricing"]);
 
@@ -14,26 +15,34 @@ export default function Nav() {
 
   const scrolled = useScroll(80);
   const segment = useSelectedLayoutSegment();
-
+  
   useEffect(() => {
-    const smoothScroll = (event) => {
+    const smoothScroll = (event: MouseEvent) => {
       event.preventDefault();
-      const targetId = event.currentTarget.getAttribute("href");
-      window.scrollTo({
-        top: document.querySelector(targetId).offsetTop,
-        behavior: "smooth",
-      });
+      const targetId = (event.currentTarget as HTMLAnchorElement).getAttribute("href");
+      
+      if (targetId) {
+        const targetElement = document.querySelector(targetId) as HTMLElement;
+  
+        if (targetElement) {
+          window.scrollTo({
+            top: targetElement.offsetTop,
+            behavior: "smooth",
+          });
+        }
+      }
     };
     document.querySelectorAll('a[href^="#"]').forEach((link) => {
-      link.addEventListener("click", smoothScroll);
+      link.addEventListener("click", smoothScroll as any);
     });
-
+  
     return () => {
       document.querySelectorAll('a[href^="#"]').forEach((link) => {
-        link.removeEventListener("click", smoothScroll);
+        link.removeEventListener("click", smoothScroll as any);
       });
     };
   }, []);
+  
 
   return (
     <div
