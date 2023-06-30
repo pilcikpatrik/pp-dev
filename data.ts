@@ -23,7 +23,7 @@ export const projects: IProject[] = [
       description:
         "Webová stránka pro živnostníka. Stránka byla vytvořena pomocí CMS systému Wordpress. Byl vytvořen grafický návrh a zajištěn hosting s doménou. Na stránce bylo také provedeno kompletní SEO.",
       key_techs: [ "Wordpress", "Figma", "RankMath", "Javascript", "CSS" ],
-      mockups: ["/images/hspro-web.png", "/images/hspro-web.png" ],
+      mockups: ["images/hspro-web.png", "images/hspro-web.png" ],
       dribble_url: "",
     },
   
@@ -41,7 +41,7 @@ export const projects: IProject[] = [
         "CSS",
         "Javascript"
       ],
-      mockups: ["/images/hspro-web.png", "/images/hspro-web.png" ],
+      mockups: ["images/hspro-web.png", "images/hspro-web.png" ],
       dribble_url: "",
     },
   
@@ -54,7 +54,7 @@ export const projects: IProject[] = [
       description:
         "Tvorba loga pro zedníka na živnosti. Základ byl vytvořen v Adobe Illustrator a zbytek detailu byl dodělán pomocí Canvy.",
       key_techs: ["Adobe illustrator", "Canva"],
-      mockups: ["/images/hspro-web.png", "/images/hspro-web.png" ],
+      mockups: ["images/hspro-web.png", "images/hspro-web.png" ],
       dribble_url: "https://dribbble.com/pilcikpatrik",
     },
   
@@ -67,7 +67,7 @@ export const projects: IProject[] = [
       description:
         "Tvorba loga pro tesařskou firmu. Základ byl vytvořen v Adobe Illustrator a zbytek detailu byl dodělán pomocí Canvy. ",
       key_techs: ["Adobe illustrator", "Canva"],
-      mockups: [ "/images/ak-logo.svg", "/images/logo-v1-cap.png", "/images/logo-v1-cup.png" ],
+      mockups: [ "images/ak-logo.svg", "images/logo-v1-cap.png", "images/logo-v1-cup.png" ],
       dribble_url: "https://dribbble.com/pilcikpatrik",
     },
   
@@ -80,7 +80,7 @@ export const projects: IProject[] = [
       description:
         "Tvorba loga pro Eshop Krowka.cz. Celé logo bylo vytvořeno pomocí Adobe Illustrator.",
       key_techs: ["Adobe illustrator"],
-      mockups: [ "/images/krowka-logo.svg", "/images/logo-v2-mockup-cap.png", "/images/logo-v2-mockup-cup.png" ],
+      mockups: [ "images/krowka-logo.svg", "images/logo-v2-mockup-cap.png", "images/logo-v2-mockup-cup.png" ],
       dribble_url: "https://dribbble.com/pilcikpatrik",
     },
     {
@@ -92,7 +92,7 @@ export const projects: IProject[] = [
       description:
         'Kompletní grafické práce pro firmu HSPro. Tyto práce zahrnovali tvorbu Letáků, brožur a banneru na cestu.',
       key_techs: ["Adobe illustrator", "Canva"],
-      mockups: ["/images/hspro-web.png", "/images/hspro-web.png" ],
+      mockups: ["images/hspro-web.png", "images/hspro-web.png" ],
       dribble_url: "https://dribbble.com/pilcikpatrik",
     },
     {
@@ -104,7 +104,7 @@ export const projects: IProject[] = [
       description:
         "Grafické práce a dlouhodobá spoluprace s Eshopem Krowka.cz. Tvorba bannerů, letáků, brožur, grafiky pro reklamu a eventy.",
       key_techs: ["Adobe illustrator", "Canva"],
-      mockups: ["/images/web-hspro.png", "/images/web-cis.png" ],
+      mockups: ["images/web-hspro.png", "images/web-cis.png" ],
       dribble_url: "https://dribbble.com/pilcikpatrik",
     },
     {
@@ -116,7 +116,7 @@ export const projects: IProject[] = [
       description:
         'Kompletní grafické práce pro firmu Tesařství A&K. Tyto práce zahrnovali tvorbu Letáků, brožur a vizitek.',
       key_techs: ["Adobe illustrator", "Canva"],
-      mockups: ["/images/web-hspro.png", "/images/web-cis.png" ],
+      mockups: ["images/web-hspro.png", "images/web-cis.png" ],
       dribble_url: "https://dribbble.com/pilcikpatrik",
     },
   ];
