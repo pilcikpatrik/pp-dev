@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useParams, useSelectedLayoutSegment } from "next/navigation";
+import { useSelectedLayoutSegment } from "next/navigation";
 import useScroll from "@/lib/hooks/use-scroll";
 import clsx from "clsx";
 import MaxWidthWrapper from "@/components/shared/max-width-wrapper";
@@ -11,8 +11,6 @@ import { MouseEvent } from "react";
 const transparentHeaderSegments = new Set(["metatags", "pricing"]);
 
 export default function Nav() {
-  const { domain = "dub.sh" } = useParams() as { domain: string };
-
   const scrolled = useScroll(80);
   const segment = useSelectedLayoutSegment();
   

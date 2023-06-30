@@ -32,7 +32,7 @@ const Home = () => (
         <img 
           src="images/profile.jpg" 
           alt="profile" 
-          className="w-[300px] h-[300px] rounded-full object-cover"  
+          className="w-[200px] h-[200px] md:w-[300px] md:h-[300px] lg:w-[300px] lg:h-[300px] rounded-full object-cover"  
         />
       </div>
       <div className=" mt-5 flex items-center justify-center space-x-4">

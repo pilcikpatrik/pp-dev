@@ -4,6 +4,7 @@ import Image from "next/image";
 import { Modal, useModal, Button, Text } from "@nextui-org/react";
 import Github from "./shared/icons/github";
 import { Dribbble } from "lucide-react";
+import ImageSlider from './ImageSlider'
 
 const ProjectCard: FunctionComponent<{
   project: IProject;
@@ -11,12 +12,12 @@ const ProjectCard: FunctionComponent<{
   project: {
     name,
     image_path,
-    category,
     deployed_url,
     description,
     github_url,
     key_techs,
     dribble_url,
+    mockups,
   },
 }) => {
   const { setVisible, bindings } = useModal();
@@ -44,15 +45,7 @@ const ProjectCard: FunctionComponent<{
         {...bindings}
       >
           <div className="mx-8 mt-8">
-            {/* <img src={image_path} alt={name} /> */}
-
-            <Image
-              src={image_path}
-              alt={name}
-              layout="responsive"
-              height="150"
-              width="300"
-            />
+            <ImageSlider images={mockups} />
           <div className="mx-auto mt-10 flex max-w-fit space-x-4">
               <a
                 href={deployed_url}

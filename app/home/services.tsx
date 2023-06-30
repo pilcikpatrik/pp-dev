@@ -19,7 +19,7 @@ const featureList = [
     icon: <Chart className="h-5 w-5 text-gray-600" />,
     description:
       "Vývoj webových stránek pomocí CMS systému wordpress nebo custom řešení pomocí kódu.",
-    demo: "https://d2vwwcvoksz7ty.cloudfront.net/analytics.mp4",
+    demo: "",
     thumbnail: "/_static/features/analytics.png",
   },
   {
@@ -28,7 +28,7 @@ const featureList = [
     icon: <QR className="h-5 w-5 text-gray-600" />,
     description:
       "QR codes and short links are like peas in a pod. That's why we've built a QR code generator right into Dub.",
-    demo: "https://d2vwwcvoksz7ty.cloudfront.net/qr.mp4",
+    demo: "",
   },
   {
     key: "domains",
@@ -36,7 +36,7 @@ const featureList = [
     icon: <Airplay className="h-5 w-5 text-gray-600" />,
     description:
       "Optimalizace a SEO webových stránek, .",
-    demo: "https://d2vwwcvoksz7ty.cloudfront.net/custom-domain.mp4",
+    demo: "",
   },
   {
     key: "link",
@@ -60,7 +60,7 @@ const featureList = [
     icon: <Users className="h-5 w-5 text-gray-600" />,
     description:
       "With Dub, you can invite unlimited team members to collaborate on your project for free - no more sharing logins via Google groups.",
-    demo: "https://d2vwwcvoksz7ty.cloudfront.net/team.mp4",
+    demo: "",
   },
 ];
 

@@ -1,5 +1,6 @@
 import Projects from "@/app/home/projects";
 import Services from "@/app/home/services";
+import Contact from "@/app/home/contact";
 import Nav from "../components/Nav";
 import Skills from "@/app/home/skills"
 import WorkExperience from "@/app/home/workExperience"
@@ -7,6 +8,7 @@ import "../styles/globals.css";
 import { ReactNode } from "react";
 import Footer from "./home/footer";
 import MobileNav from "@/components/Mobile-nav";
+
 
 export const metadata = {
   title: "Pilčík Patrik",
@@ -44,6 +46,10 @@ const RootLayout: React.FC<LayoutProps> = ({ children }) => (
 
           <section id="references">
             <Projects />
+          </section>
+
+          <section id="contact">
+            <Contact />
           </section>
           
           <Footer />

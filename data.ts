@@ -11,8 +11,7 @@ export const projects: IProject[] = [
       github_url: "https://github.com/pilcikpatrik",
       category: ["Weby"],
       key_techs: ["Wordpress", "Figma", "RankMath", "Javascript", "CSS" ],
-      mockups: ["/images/hspro-web.png", "/images/hspro-web.png" ],
-      detail_url: "",
+      mockups: ["images/web-hspro.png", "images/web-cis.png" ],
       dribble_url: "",
     },
     {
@@ -25,7 +24,6 @@ export const projects: IProject[] = [
         "Webová stránka pro živnostníka. Stránka byla vytvořena pomocí CMS systému Wordpress. Byl vytvořen grafický návrh a zajištěn hosting s doménou. Na stránce bylo také provedeno kompletní SEO.",
       key_techs: [ "Wordpress", "Figma", "RankMath", "Javascript", "CSS" ],
       mockups: ["/images/hspro-web.png", "/images/hspro-web.png" ],
-      detail_url: "",
       dribble_url: "",
     },
   
@@ -44,7 +42,6 @@ export const projects: IProject[] = [
         "Javascript"
       ],
       mockups: ["/images/hspro-web.png", "/images/hspro-web.png" ],
-      detail_url: "",
       dribble_url: "",
     },
   
@@ -58,7 +55,6 @@ export const projects: IProject[] = [
         "Tvorba loga pro zedníka na živnosti. Základ byl vytvořen v Adobe Illustrator a zbytek detailu byl dodělán pomocí Canvy.",
       key_techs: ["Adobe illustrator", "Canva"],
       mockups: ["/images/hspro-web.png", "/images/hspro-web.png" ],
-      detail_url: "",
       dribble_url: "https://dribbble.com/pilcikpatrik",
     },
   
@@ -71,8 +67,7 @@ export const projects: IProject[] = [
       description:
         "Tvorba loga pro tesařskou firmu. Základ byl vytvořen v Adobe Illustrator a zbytek detailu byl dodělán pomocí Canvy. ",
       key_techs: ["Adobe illustrator", "Canva"],
-      mockups: ["/images/hspro-web.png", "/images/hspro-web.png" ],
-      detail_url: "",
+      mockups: [ "/images/ak-logo.svg", "/images/logo-v1-cap.png", "/images/logo-v1-cup.png" ],
       dribble_url: "https://dribbble.com/pilcikpatrik",
     },
   
@@ -85,13 +80,12 @@ export const projects: IProject[] = [
       description:
         "Tvorba loga pro Eshop Krowka.cz. Celé logo bylo vytvořeno pomocí Adobe Illustrator.",
       key_techs: ["Adobe illustrator"],
-      mockups: ["/images/hspro-web.png", "/images/hspro-web.png" ],
-      detail_url: "",
+      mockups: [ "/images/krowka-logo.svg", "/images/logo-v2-mockup-cap.png", "/images/logo-v2-mockup-cup.png" ],
       dribble_url: "https://dribbble.com/pilcikpatrik",
     },
     {
       name: "Grafika - HSPro",
-      image_path: "images/hspro-letak.png",
+      image_path: "images/hspro-letak.svg",
       deployed_url: "https://not-utube.web.app/",
       github_url: "",
       category: ["Tiskoviny"],
@@ -99,33 +93,30 @@ export const projects: IProject[] = [
         'Kompletní grafické práce pro firmu HSPro. Tyto práce zahrnovali tvorbu Letáků, brožur a banneru na cestu.',
       key_techs: ["Adobe illustrator", "Canva"],
       mockups: ["/images/hspro-web.png", "/images/hspro-web.png" ],
-      detail_url: "",
       dribble_url: "https://dribbble.com/pilcikpatrik",
     },
     {
       name: "Grafika - Krowka.cz",
-      image_path: "images/krowka-brozura.png",
+      image_path: "images/krowka-brozura.svg",
       deployed_url: "https://o-my-goal.web.app/",
       github_url: "",
       category: ["Tiskoviny"],
       description:
         "Grafické práce a dlouhodobá spoluprace s Eshopem Krowka.cz. Tvorba bannerů, letáků, brožur, grafiky pro reklamu a eventy.",
       key_techs: ["Adobe illustrator", "Canva"],
-      mockups: ["/images/hspro-web.png", "/images/hspro-web.png" ],
-      detail_url: "",
+      mockups: ["/images/web-hspro.png", "/images/web-cis.png" ],
       dribble_url: "https://dribbble.com/pilcikpatrik",
     },
     {
       name: "Grafika - Tesařství A&K",
-      image_path: "images/ak-letak.png",
+      image_path: "images/ak-letak.svg",
       deployed_url: "https://not-utube.web.app/",
       github_url: "",
       category: ["Tiskoviny"],
       description:
         'Kompletní grafické práce pro firmu Tesařství A&K. Tyto práce zahrnovali tvorbu Letáků, brožur a vizitek.',
       key_techs: ["Adobe illustrator", "Canva"],
-      mockups: ["/images/hspro-web.png", "/images/hspro-web.png" ],
-      detail_url: "",
+      mockups: ["/images/web-hspro.png", "/images/web-cis.png" ],
       dribble_url: "https://dribbble.com/pilcikpatrik",
     },
   ];

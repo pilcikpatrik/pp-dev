@@ -24,11 +24,16 @@ const sidebar = {
   },
 };
 
-const navItems = ["pricing", "changelog"];
+const navItems = [
+  { href: "home", text: "Domů" },
+  { href: "skills", text: "Skills" },
+  { href: "exp", text: "Zkušenosti" },
+  { href: "services", text: "Služby" },
+  { href: "references", text: "Reference" },
+  { href: "contact", text: "Kontakt" }
+];
 
 export default function MobileNav() {
-  const { domain = "dub.sh" } = useParams() as { domain: string };
-
   const [isOpen, toggleOpen] = useCycle(false, true);
   const containerRef = useRef(null);
   const { height } = useDimensions(containerRef);
@@ -52,50 +57,19 @@ export default function MobileNav() {
         className="absolute grid w-full gap-3 px-10 py-16"
       >
         {navItems.map((item) => (
-          <div key={item} className="grid gap-3">
+          <div key={item.href} className="grid gap-3">
             <MenuItem>
               <Link
-                href={
-                  domain === "dub.sh"
-                    ? `/${item}`
-                    : `https://dub.sh/${item}?utm_source=${domain}&utm_medium=referral&utm_campaign=custom-domain`
-                }
+                href={`#${item.href}`}
                 onClick={() => toggleOpen()}
                 className="flex w-full font-semibold capitalize"
               >
-                {item}
+                {item.text}
               </Link>
             </MenuItem>
             <MenuItem className="my-3 h-px w-full bg-gray-300" />
           </div>
         ))}
-
-        <MenuItem key="Login">
-          <Link
-            href={
-              process.env.NEXT_PUBLIC_VERCEL_ENV === "production"
-                ? "https://app.dub.sh/login"
-                : "http://app.localhost:3000/login"
-            }
-            className="flex w-full font-semibold capitalize"
-          >
-            Log in
-          </Link>
-        </MenuItem>
-        <MenuItem className="my-3 h-px w-full bg-gray-300" />
-
-        <MenuItem key="Signup">
-          <Link
-            href={
-              process.env.NEXT_PUBLIC_VERCEL_ENV === "production"
-                ? "https://app.dub.sh/register"
-                : "http://app.localhost:3000/register"
-            }
-            className="flex w-full font-semibold capitalize"
-          >
-            Sign Up
-          </Link>
-        </MenuItem>
       </motion.ul>
       <MenuToggle toggle={toggleOpen} />
     </motion.nav>
