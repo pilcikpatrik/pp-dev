@@ -27,7 +27,7 @@ const featureList = [
     title: "Tvorba Eshopů",
     icon: <QR className="h-5 w-5 text-gray-600" />,
     description:
-      "QR codes and short links are like peas in a pod. That's why we've built a QR code generator right into Dub.",
+      "Tvorba Eshopů s pomocí Woocomerce",
     demo: "",
   },
   {
@@ -35,7 +35,7 @@ const featureList = [
     title: "Optimalizace a SEO webu",
     icon: <Airplay className="h-5 w-5 text-gray-600" />,
     description:
-      "Optimalizace a SEO webových stránek, .",
+      "Optimalizace a SEO webových stránek.",
     demo: "",
   },
   {
@@ -51,7 +51,7 @@ const featureList = [
     title: "Grafické práce",
     icon: <Photo className="h-5 w-5 text-gray-600" />,
     description:
-      "Tvorba letáku, brožur, vizitek bradu atd...",
+      "Tvorba letáku, brožur, vizitek brandu atd...",
     demo: "videos/graphic.mp4",
   },
   {
@@ -59,7 +59,7 @@ const featureList = [
     title: "Copywriting",
     icon: <Users className="h-5 w-5 text-gray-600" />,
     description:
-      "With Dub, you can invite unlimited team members to collaborate on your project for free - no more sharing logins via Google groups.",
+      "Tvorba textů, článků atd...",
     demo: "",
   },
 ];

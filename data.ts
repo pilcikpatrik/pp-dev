@@ -17,7 +17,7 @@ export const projects: IProject[] = [
     {
       name: "JP - Zednicke Práce ",
       image_path: "images/web-jp.png",
-      deployed_url: "https://visual-algorithm.web.app/",
+      deployed_url: "",
       github_url: "https://github.com/pilcikpatrik",
       category: ["Weby"],
       description:
@@ -30,7 +30,7 @@ export const projects: IProject[] = [
     {
       name: "C.I.S. - Vývoj softwaru",
       image_path: "images/web-cis.png",
-      deployed_url: "https://dev-talks.herokuapp.com/",
+      deployed_url: "",
       github_url: "https://github.com/pilcikpatrik",
       category: ["Weby"],
       description:
@@ -48,7 +48,7 @@ export const projects: IProject[] = [
     {
       name: "Logo - JPZednictvi",
       image_path: "images/jp-logo.svg",
-      deployed_url: "https://sumit-chat.netlify.app/",
+      deployed_url: "",
       github_url: "",
       category: ["Loga"],
       description:
@@ -61,7 +61,7 @@ export const projects: IProject[] = [
     {
       name: "Logo - Tesařství A&K",
       image_path: "images/ak-logo.svg",
-      deployed_url: "http://sumaxtweetme.pythonanywhere.com/",
+      deployed_url: "",
       github_url: "",
       category: ["Loga"],
       description:
@@ -86,7 +86,7 @@ export const projects: IProject[] = [
     {
       name: "Grafika - HSPro",
       image_path: "images/hspro-letak.svg",
-      deployed_url: "https://not-utube.web.app/",
+      deployed_url: "",
       github_url: "",
       category: ["Tiskoviny"],
       description:
@@ -98,7 +98,7 @@ export const projects: IProject[] = [
     {
       name: "Grafika - Krowka.cz",
       image_path: "images/krowka-brozura.svg",
-      deployed_url: "https://o-my-goal.web.app/",
+      deployed_url: "",
       github_url: "",
       category: ["Tiskoviny"],
       description:
@@ -110,7 +110,7 @@ export const projects: IProject[] = [
     {
       name: "Grafika - Tesařství A&K",
       image_path: "images/ak-letak.svg",
-      deployed_url: "https://not-utube.web.app/",
+      deployed_url: "",
       github_url: "",
       category: ["Tiskoviny"],
       description:
