@@ -13,7 +13,7 @@ const Home = () => (
     </p>
     <div className="mx-auto mt-10 flex max-w-fit space-x-4">
         <a
-          href="https://app.dub.sh/register"
+          href=""
           className="rounded-full border border-black bg-black px-5 py-2 text-sm text-white shadow-lg transition-all hover:bg-white hover:text-black"
         >
           Zobrazit CV
