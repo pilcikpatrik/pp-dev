@@ -18,8 +18,8 @@ const featureList = [
     title: "Vývoj webových stránek",
     icon: <Chart className="h-5 w-5 text-gray-600" />,
     description:
-      "Vývoj webových stránek pomocí CMS systému wordpress nebo custom řešení pomocí kódu.",
-    demo: "",
+      "Nabízím komplexní služby v oblasti vývoje webových stránek. Jedná se o custom naprogramované weby nebo weby přes Wordpress. Ať už potřebujete jednoduchou prezentaci, blog nebo složitý web, jsem připraven vám pomoci.",
+    demo: "images/website.svg",
     thumbnail: "/_static/features/analytics.png",
   },
   {
@@ -27,40 +27,40 @@ const featureList = [
     title: "Tvorba Eshopů",
     icon: <QR className="h-5 w-5 text-gray-600" />,
     description:
-      "Tvorba Eshopů s pomocí Woocomerce",
-    demo: "",
+      "Poskytuji profesionální služby v oblasti vývoje e-shopů. S využitím platformy Woocommerce vytvářím e-shopy, které jsou přizpůsobeny potřebám vašeho podnikání. Mým cílem je vytvořit e-shop, který je snadno použitelný, efektivní a optimalizovaný pro vyhledávače, aby vaše produkty byly snadno dostupné pro potenciální zákazníky.",
+    demo: "images/eshop.svg",
   },
   {
     key: "domains",
     title: "Optimalizace a SEO webu",
     icon: <Airplay className="h-5 w-5 text-gray-600" />,
     description:
-      "Optimalizace a SEO webových stránek.",
-    demo: "",
+      "Poskytuji komplexní služby v oblasti optimalizace a SEO pro webové stránky. Tyto služby zahrnují zlepšení rychlosti načítání stránky, optimalizaci pro mobilní zařízení, vytváření SEO přátelského obsahu a další. Cílem je zvýšit viditelnost vašeho webu ve vyhledávačích a přilákat více návštěvníků.",
+    demo: "images/seo.svg",
   },
   {
     key: "link",
     title: "Tvorba loga",
     icon: <Link2 className="h-5 w-5 text-gray-600" />,
     description:
-      "Tvorba loga na míru, včetně několika verzí a barev",
-    demo: "videos/logo.mp4",
+      "Nabízím služby v oblasti tvorby loga. Vytvářím jedinečná a atraktivní loga, která odrážejí identitu vaší značky. Každé logo je vytvořeno s ohledem na vaše specifické požadavky a cíle, včetně více variací a barev.",
+    demo: "images/logo.svg",
   },
   {
     key: "social",
     title: "Grafické práce",
     icon: <Photo className="h-5 w-5 text-gray-600" />,
     description:
-      "Tvorba letáku, brožur, vizitek brandu atd...",
-    demo: "videos/graphic.mp4",
+      "Nabízím širokou škálu grafických služeb, včetně tvorby letáků, brožur, vizitek a dalších marketingových materiálů. Vytvářím vizuálně poutavé a efektivní designy, které posílí vaši značku a pomohou vám dosáhnout vašich obchodních cílů.",
+    demo: "images/graphic.svg",
   },
   {
     key: "team",
     title: "Copywriting",
     icon: <Users className="h-5 w-5 text-gray-600" />,
     description:
-      "Tvorba textů, článků atd...",
-    demo: "",
+      "Nabízím copywritingové služby, které zahrnují vytváření působivých a přesvědčivých textů pro vaše webové stránky, blogy, marketingové materiály a další. Vytvářím obsah, který nejen přitahuje pozornost, ale také motivuje čtenáře k akci. Ať už potřebujete prodat produkt, sdělit svůj příběh nebo informovat své publikum.",
+    demo: "images/copywriting.svg",
   },
 ];
 
@@ -81,7 +81,7 @@ export default function Features() {
             </span>{" "}
           </h2>
           <p className="mt-5 text-gray-600 sm:text-lg">
-            Nabízím širokou škálu služeb od vývoje až po grafické práce
+            Nabízím širokou škálu služeb jako vývoj webů a eshopů, grafické práce nebo SEO a copywriting
           </p>
         </div>
 
@@ -137,16 +137,13 @@ export default function Features() {
                         }}
                         className="relative min-h-[600px] w-full overflow-hidden whitespace-nowrap rounded-2xl bg-white shadow-2xl lg:mt-10 lg:w-[800px]"
                       >
-                        <video
-                          autoPlay
-                          muted
-                          loop
+                        <img
                           width={900}
                           height={600}
-                        >
-                          <source src={feature.demo} type="video/mp4" />
-                          Your browser does not support the video tag.
-                        </video>
+                          className="object-contain w-[900px] h-[600px]"
+                          src={feature.demo}
+                        
+                        />
                       </motion.div>
                     );
                   }

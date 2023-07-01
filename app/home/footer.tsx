@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { Github, LinkedIn, Logo, Twitter } from "@/components/shared/icons";
+import { Github, LinkedIn, Twitter } from "@/components/shared/icons";
 import { useParams } from "next/navigation";
 import MaxWidthWrapper from "@/components/shared/max-width-wrapper";
 import { Dribbble, Instagram } from "lucide-react";
@@ -20,12 +20,12 @@ const navigation = {
     { name: "UTB", href: "https://www.utb.cz/" }
   ],
   legal: [
-    { name: "Privacy", href: "/privacy" },
-    { name: "Terms", href: "/terms" },
+    { name: "Privacy", href: "/privacy/page" },
   ],
   resources: [
     { name: "Telefon: +420 605 584 635" },
     { name: "Email: pilcikpatrik@seznam.cz" },
+    { name: "Location: Valašská Polanka 259, 75611" },
   ],
 };
 
@@ -33,9 +33,9 @@ export default function Footer() {
   const { domain = "dub.sh" } = useParams() as { domain: string };
 
   const createHref = (href: string) =>
-    domain === "dub.sh"
+    domain === "pp-dev"
       ? href
-      : `https://dub.sh${href}?utm_source=${domain}&utm_medium=referral&utm_campaign=custom-domain`;
+      : ``;
 
   return (
     <footer className="z-10 border-t border-gray-200 bg-white/50 py-8 backdrop-blur-lg">
@@ -47,7 +47,7 @@ export default function Footer() {
               <img src="images/profile.jpg" className="h-10 w-10 rounded-full text-gray-600 object-cover" />
             </Link>
             <p className="max-w-xs text-sm text-gray-500">
-              Tvorba webů, webových prací, tvorba eshopů a grafických prací.
+            Jsem profesionální web developer a designér, který nabízí širokou škálu služeb, včetně vývoje webových stránek, tvorby e-shopů, optimalizace a SEO pro webové stránky, tvorby loga, grafických prací a copywritingu. Mé služby jsou navrženy tak, aby podporovaly růst vašeho podnikání a zvýšily vaši online přítomnost.
             </p>
             <div className="flex items-center space-x-2">
             <a

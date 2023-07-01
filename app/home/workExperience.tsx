@@ -19,7 +19,7 @@ const experienceData = [
     title: "C.I.S s.r.o.",
     subtitle: "Vývoj softwaru",
     period: "2020-x",
-    points: ["Tvorba nových features", "Psaní dokumentace a testů", "Vývoj v jazyce C#", "Práce s databází MSSQL", "Používání knihovny DevExpress a WinForms"],
+    points: ["Tvorba nových features", "Psaní dokumentace a testů", "Vývoj v jazyce C#", "Práce s databází MSSQL", "Používání knihovny DevExpress a WinForms" , "Tvorba formulářů"],
   },
   {
     imgSrc: "images/profile.jpg",
@@ -27,7 +27,7 @@ const experienceData = [
     title: "Freelance",
     subtitle: "Tvorba webů a grafiky",
     period: "2021-x",
-    points: ["Tvorba custom webů", "HTML, CSS, Javasrcipt", "React.js + Next.js", "Tvorba webů běžících na wordpressu", "Tvorba grafiky (Tiskoviny, reklama, loga)"],
+    points: ["Tvorba custom webů a eshopů", "HTML, CSS, Javasrcipt", "React.js + Next.js", "Tvorba webů běžících na wordpressu", "Tvorba grafiky (Tiskoviny, reklama, loga)"],
   },
 ];
 
@@ -48,7 +48,7 @@ const WorkExperience = (props: Props) => {
           </span>{" "}
         </h2>
         <p className="mt-5 text-gray-600 sm:text-lg">
-          Mám zkušenosti v oblasti vývoje informačních systému a tvorby webů, včetně grafických prací
+          Mám zkušenosti v oblasti vývoje IS, webů a grafických prací
         </p>
       </div>
       <div className='flex flex-wrap justify-center gap-10 align-middle mt-10'>

@@ -15,7 +15,7 @@ const contact = (props: Props) => {
           </span>{" "}
         </h2>
         <p className="mt-5 text-gray-600 sm:text-lg">
-          Máte zájem o spolupráci ? Neváhejte mě kontaktovat
+          Máte zájem o spolupráci ? Neváhejte mne kontaktovat
         </p>
       </div>
       <div className='flex flex-wrap justify-center gap-6 mt-10'>

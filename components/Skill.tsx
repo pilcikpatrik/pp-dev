@@ -2,22 +2,9 @@
 import React from 'react'
 import Head from 'next/head'
 import { Modal, useModal } from "@nextui-org/react";
+import { SkillsProps } from "../types"
 
-interface SkillsProps {
-    imgSrc: string;
-    percentage: string;
-    title: string;
-    description: string;
-    projects: string;
-    experience: string
-
-  }
-
-type Props = {
-
-}
-
-const Skills: React.FC<SkillsProps> = ({ imgSrc, percentage, title, description, projects, experience }) => {
+const Skills: React.FC<{skillsData: SkillsProps}> = ({ skillsData: {imgSrc, percentage, title, description, projects, experience} }) => {
     const { setVisible, bindings } = useModal();
 
   return (

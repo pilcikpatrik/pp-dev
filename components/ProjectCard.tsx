@@ -1,7 +1,7 @@
 import { FunctionComponent } from "react";
 import { IProject } from "../types";
 import Image from "next/image";
-import { Modal, useModal, Button, Text } from "@nextui-org/react";
+import { Modal, useModal } from "@nextui-org/react";
 import Github from "./shared/icons/github";
 import { Dribbble } from "lucide-react";
 import ImageSlider from './ImageSlider'

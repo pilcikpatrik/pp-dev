@@ -1,16 +1,12 @@
-import { FunctionComponent } from "react";
-import { IconType } from "react-icons";
 
-export interface Service {
-  Icon: IconType;
+export interface SkillsProps {
+  imgSrc: string;
+  percentage: string;
   title: string;
-  about: string;
-}
+  description: string;
+  projects: string;
+  experience: string;
 
-export interface Skill {
-  Icon: IconType;
-  name: string;
-  level: string;
 }
 
 export interface IProject {
@@ -22,7 +18,7 @@ export interface IProject {
   category: Category[];
   key_techs: string[];
   mockups: string[];
-  dribble_url: string,
+  dribble_url: string;
 }
 
 export type Category = "Weby" | "Loga" | "Tiskoviny" | "Projekty";

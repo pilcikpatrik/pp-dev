@@ -2,7 +2,6 @@
 
 import { motion, useCycle } from "framer-motion";
 import Link from "next/link";
-import { useParams } from "next/navigation";
 import { ReactNode, useEffect, useMemo, useRef, useState } from "react";
 
 const sidebar = {

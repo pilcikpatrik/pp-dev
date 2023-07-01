@@ -8,7 +8,7 @@ import MaxWidthWrapper from "@/components/shared/max-width-wrapper";
 import { useEffect } from "react";
 import { MouseEvent } from "react";
 
-const transparentHeaderSegments = new Set(["metatags", "pricing"]);
+const transparentHeaderSegments = new Set([""]);
 
 export default function Nav() {
   const scrolled = useScroll(80);
