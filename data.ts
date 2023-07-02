@@ -216,7 +216,7 @@ export const projects: IProject[] = [
       description:
         "Tvorba loga pro zedníka na živnosti. Základ byl vytvořen v Adobe Illustrator a zbytek detailu byl dodělán pomocí Canvy.",
       key_techs: ["Adobe illustrator", "Canva"],
-      mockups: ["images/jp-logo.svg", "images/jp-logo-cap", "images/jp-logo-cup" ],
+      mockups: ["images/jp-logo.svg", "images/jp-logo-cap.png", "images/jp-logo-cup.png" ],
       dribble_url: "https://dribbble.com/pilcikpatrik",
     },
   
@@ -278,7 +278,7 @@ export const projects: IProject[] = [
       description:
         'Kompletní grafické práce pro firmu Tesařství A&K. Tyto práce zahrnovali tvorbu Letáků, brožur a vizitek.',
       key_techs: ["Adobe illustrator", "Canva"],
-      mockups: ["images/ak-letak.svg.png", "images/ak-letak-zed.svg", "images/ak-vizitka.svg" ],
+      mockups: ["images/ak-letak.svg", "images/ak-letak-zed.svg", "images/ak-vizitka.svg" ],
       dribble_url: "https://dribbble.com/pilcikpatrik",
     },
   ];
