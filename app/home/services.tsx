@@ -140,7 +140,7 @@ export default function Features() {
                         <img
                           width={900}
                           height={600}
-                          className="object-contain w-[900px] h-[600px]"
+                          className=" object-cover w-[900px] h-[600px]"
                           src={feature.demo}
                         
                         />

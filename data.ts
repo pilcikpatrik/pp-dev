@@ -185,7 +185,7 @@ export const projects: IProject[] = [
       description:
         "Webová stránka pro živnostníka. Stránka byla vytvořena pomocí CMS systému Wordpress. Byl vytvořen grafický návrh a zajištěn hosting s doménou. Na stránce bylo také provedeno kompletní SEO.",
       key_techs: [ "Wordpress", "Figma", "RankMath", "Javascript", "CSS" ],
-      mockups: ["/images/hspro-web.png", "/images/hspro-web.png" ],
+      mockups: ["images/web-jp.png", "images/web-jp-2.png", "images/web-jp-3.png" ],
       dribble_url: "",
     },
   
@@ -203,7 +203,7 @@ export const projects: IProject[] = [
         "CSS",
         "Javascript"
       ],
-      mockups: ["/images/hspro-web.png", "/images/hspro-web.png" ],
+      mockups: ["images/web-cis.png", "images/web-cis-2.png", "images/web-cis-3.png" ],
       dribble_url: "",
     },
   
@@ -216,7 +216,7 @@ export const projects: IProject[] = [
       description:
         "Tvorba loga pro zedníka na živnosti. Základ byl vytvořen v Adobe Illustrator a zbytek detailu byl dodělán pomocí Canvy.",
       key_techs: ["Adobe illustrator", "Canva"],
-      mockups: ["/images/hspro-web.png", "/images/hspro-web.png" ],
+      mockups: ["images/jp-logo.svg", "images/jp-logo-cap", "images/jp-logo-cup" ],
       dribble_url: "https://dribbble.com/pilcikpatrik",
     },
   
@@ -254,7 +254,7 @@ export const projects: IProject[] = [
       description:
         'Kompletní grafické práce pro firmu HSPro. Tyto práce zahrnovali tvorbu Letáku, brožury a banneru na cestu.',
       key_techs: ["Adobe illustrator", "Canva"],
-      mockups: ["/images/hspro-web.png", "/images/hspro-web.png" ],
+      mockups: ["images/hspro-letak.svg", "images/hspro-brozura.svg", "images/hspro-banner.svg"  ],
       dribble_url: "https://dribbble.com/pilcikpatrik",
     },
     {
@@ -266,7 +266,7 @@ export const projects: IProject[] = [
       description:
         "Grafické práce a dlouhodobá spolupráce s Eshopem Krowka.cz. Tvorba bannerů, letáků, brožur, grafiky pro reklamu a eventy.",
       key_techs: ["Adobe illustrator", "Canva"],
-      mockups: ["/images/web-hspro.png", "/images/web-cis.png" ],
+      mockups: ["images/krowka-brozura.svg", "images/krowka-letak.svg", "images/krowka-showcase.svg" ],
       dribble_url: "https://dribbble.com/pilcikpatrik",
     },
     {
@@ -278,7 +278,7 @@ export const projects: IProject[] = [
       description:
         'Kompletní grafické práce pro firmu Tesařství A&K. Tyto práce zahrnovali tvorbu Letáků, brožur a vizitek.',
       key_techs: ["Adobe illustrator", "Canva"],
-      mockups: ["/images/web-hspro.png", "/images/web-cis.png" ],
+      mockups: ["images/ak-letak.svg.png", "images/ak-letak-zed.svg", "images/ak-vizitka.svg" ],
       dribble_url: "https://dribbble.com/pilcikpatrik",
     },
   ];
