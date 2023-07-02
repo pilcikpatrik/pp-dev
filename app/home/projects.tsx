@@ -72,7 +72,7 @@ const Projects = () => {
         >
           {displayedProjects.map((project) => (
             <motion.div
-              className="col-span-12 p-2 bg-gray-200 rounded-lg sm:col-span-6 lg:col-span-4 dark:bg-dark-200"
+              className="col-span-12 p-2 rounded-lg sm:col-span-6 lg:col-span-4 border border-gray-200 bg-white/10 shadow-[inset_10px_-50px_94px_0_rgb(199,199,199,0.2)] backdrop-blur"
               key={project.name}
               layout
               layoutId={project.name}
