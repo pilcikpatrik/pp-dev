@@ -16,9 +16,12 @@ export interface IProject {
   deployed_url: string;
   github_url: string;
   category: Category[];
+  techStack: TechStack[];
   key_techs: string[];
   mockups: string[];
   dribble_url: string;
 }
 
 export type Category = "Weby" | "Loga" | "Tiskoviny" | "Projekty";
+
+export type TechStack = "Javascript" | "React" | "C#" | "Nextjs" | "C++" | "C" | "Python";

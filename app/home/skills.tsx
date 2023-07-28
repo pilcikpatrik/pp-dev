@@ -20,9 +20,13 @@ const skills = () => {
           </span>{" "}
         </h2>
         <p className="mt-5 text-gray-600 sm:text-lg">
-          Mám zkušenosti v oblasti vývoje informačních systému a tvorby webů, včetně grafických prací
+          Prohlédněte si některé z technologií které ovládám
         </p>
-
+      </div>
+      <div className='flex justify-center'>
+        <div className='border border-gray-300 p-2 rounded-md inline-flex justify-center items-center mt-5'>
+          <p className='bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent'>Pro zobrazení detailu klikněte na ikonu</p>
+        </div>
       </div>
       <div className='grid grid-cols-4 gap-5 mt-10 justify-items-center md:grid-cols-5'>
       {skillsData.map((skills, index) =>

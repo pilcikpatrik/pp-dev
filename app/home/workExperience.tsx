@@ -48,7 +48,7 @@ const WorkExperience = (props: Props) => {
           </span>{" "}
         </h2>
         <p className="mt-5 text-gray-600 sm:text-lg">
-          Mám zkušenosti v oblasti vývoje IS, webů a grafických prací
+          Mám zkušenosti s vývojem v jazyce C# a také tvorbou webových stranék a grafiky
         </p>
       </div>
       <div className='flex flex-wrap justify-center gap-10 align-middle mt-10'>

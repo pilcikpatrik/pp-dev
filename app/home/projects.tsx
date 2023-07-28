@@ -3,13 +3,14 @@ import { useState, useEffect } from "react";
 import ProjectCard from "../../components/ProjectCard";
 import ProjectsNavbar from "../../components/ProjectsNavbar";
 import { projects as projectsData } from "../../data";
-import { Category } from "../../types";
+import { Category, TechStack } from "../../types";
 import MaxWidthWrapper from "@/components/shared/max-width-wrapper";
 import { motion } from "framer-motion";
 
 const Projects = () => {
   const [projects, setProjects] = useState(projectsData);
   const [active, setActive] = useState("Vše");
+  const [activeStack, setActiveStack] = useState("");
   const [showMore, setShowMore] = useState(false);
   const [isClient, setIsClient] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
@@ -42,6 +43,20 @@ const Projects = () => {
     setActive(category);
   };
 
+  const handlerFilterTechStack = (techStack: TechStack | "Projekty") => {
+    if (techStack === "Projekty") {
+      setProjects(projectsData);
+      setActiveStack(techStack);
+      return;
+    }
+
+    const newArray = projectsData.filter((project) =>
+      project.techStack.includes(techStack)
+    );
+    setProjects(newArray);
+    setActiveStack(techStack);
+  };
+
   const displayedProjects = showMore ? projects : projects.slice(0, isMobile ? 3 : 6);
 
   const handleShowMore = () => {
@@ -61,10 +76,12 @@ const Projects = () => {
               Prohlédněte si některé z mých hotových prací
             </p>
           </div>
-        <div className="flex justify-center items-center">
+        <div className="flex flex-col justify-center items-center">
           <ProjectsNavbar
             handlerFilterCategory={handlerFilterCategory}
+            handlerFilterTechStack={handlerFilterTechStack}
             active={active}
+            activeStack={activeStack}
           />
         </div>
         <motion.div className="relative grid grid-cols-12 gap-4 my-3"
