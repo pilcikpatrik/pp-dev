@@ -270,7 +270,7 @@ export const projects: IProject[] = [
     },
     {
       name: "Logo - elektro-auticka.cz",
-      image_path: "images/krowka-logo.svg",
+      image_path: "images/logo-auticka.svg",
       deployed_url: "https://www.elektro-auticka.cz/",
       github_url: "",
       category: ["Loga"],
@@ -278,7 +278,7 @@ export const projects: IProject[] = [
       description:
         "Tvorba loga pro Eshop elektro-auticka.cz. Celé logo bylo vytvořeno pomocí Adobe Illustrator.",
       key_techs: ["Adobe illustrator"],
-      mockups: [ "images/krowka-logo.svg", "images/logo-v2-mockup-cap.png", "images/logo-v2-mockup-cup.png" ],
+      mockups: ["images/logo-auticka.svg"],
       dribble_url: "https://dribbble.com/pilcikpatrik",
     },
     {
