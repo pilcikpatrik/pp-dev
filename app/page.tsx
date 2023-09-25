@@ -13,7 +13,7 @@ const Home = () => (
     </p>
     <div className="mx-auto mt-10 flex max-w-fit space-x-4">
         <a
-          href=""
+          href="https://drive.google.com/file/d/1KAvxlb-Ss7OyZvmtZpvkxgi_HzSztJPf/view?usp=drive_link"
           className="rounded-full border border-black bg-black px-5 py-2 text-sm text-white shadow-lg transition-all hover:bg-white hover:text-black"
         >
           Zobrazit CV
