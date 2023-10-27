@@ -14,8 +14,9 @@ const Home = () => (
       Specializuji se na vývoj webových stránek a grafiky
     </p>
     <div className="mx-auto mt-10 flex max-w-fit space-x-4">
+<<<<<<< HEAD
       <a
-        href=""
+        href="https://drive.google.com/file/d/1KAvxlb-Ss7OyZvmtZpvkxgi_HzSztJPf/view?usp=drive_link"
         className="rounded-full border border-black bg-black px-5 py-2 text-sm text-white shadow-lg transition-all hover:bg-white hover:text-black"
       >
         Zobrazit CV
@@ -63,6 +64,61 @@ const Home = () => (
         <Twitter className="h-10 w-10 hover:border-gray-800 p-2 rounded-lg border border-gray-300 bg-white shadow-lg transition-all" />
       </a>
     </div>
+=======
+        <a
+          href="https://drive.google.com/file/d/1KAvxlb-Ss7OyZvmtZpvkxgi_HzSztJPf/view?usp=drive_link"
+          className="rounded-full border border-black bg-black px-5 py-2 text-sm text-white shadow-lg transition-all hover:bg-white hover:text-black"
+        >
+          Zobrazit CV
+        </a>
+        <a
+          className="flex items-center justify-center space-x-2 rounded-full border border-gray-300 bg-white px-5 py-2 shadow-lg transition-all hover:border-gray-800"
+          href="https://github.com/pilcikpatrik"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <Github className="h-5 w-5 text-black" />
+          <p className="text-sm">GitHub</p>
+        </a>
+      </div>
+      <div className="mt-10 relative">
+        <img 
+          src="images/profile.jpg" 
+          alt="profile" 
+          className="w-[200px] h-[200px] md:w-[300px] md:h-[300px] lg:w-[300px] lg:h-[300px] rounded-full object-cover"  
+        />
+      </div>
+      <div className=" mt-5 flex items-center justify-center space-x-4">
+          <a    
+            href="https://www.linkedin.com/in/patrik-pil%C4%8D%C3%ADk-6a7166239/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <LinkedIn className="h-10 w-10 hover:border-gray-800 p-2 rounded-lg border border-gray-300 bg-white shadow-lg transition-all"/>
+          </a>
+          <a    
+            href="https://dribbble.com/pilcikpatrik"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <Dribbble className="h-10 w-10 hover:border-gray-800 p-2 rounded-lg border border-gray-300 bg-white shadow-lg transition-all"/>
+          </a>
+          <a    
+            href="https://www.instagram.com/patriik074/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <Instagram className="h-10 w-10 hover:border-gray-800 p-2 rounded-lg border border-gray-300 bg-white shadow-lg transition-all" />
+          </a>
+          <a    
+            href="https://twitter.com/PPilcik"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <Twitter className="h-10 w-10 hover:border-gray-800 p-2 rounded-lg border border-gray-300 bg-white shadow-lg transition-all"/>
+          </a>
+        </div>
+>>>>>>> 5dc4403bd98533db1379a65466a4003a25b2b36a
   </section>
 );
 
