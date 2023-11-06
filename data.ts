@@ -448,6 +448,23 @@ export const projects: IProject[] = [
     dribble_url: "https://dribbble.com/pilcikpatrik",
   },
   {
+    name: "Grafika - TallGuys",
+    image_path: "images/tallguys.png",
+    deployed_url: "",
+    github_url: "",
+    category: ["Tiskoviny"],
+    techStack: [],
+    description:
+      "Zpracování grafiky pro eshop Tall guys, jako úkol v neúspěšném výběrovém řízení.",
+    key_techs: ["Adobe Photoshop"],
+    mockups: [
+      "images/tallguys.png",
+      "images/tallguys-2.png",
+      "images/tallguys-3.png",
+    ],
+    dribble_url: "https://dribbble.com/pilcikpatrik",
+  },
+  {
     name: "Kalkulačka - Javascript",
     image_path: "images/cal-1.png",
     deployed_url: "https://calculator-mauve-iota.vercel.app/",
