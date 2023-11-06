@@ -449,7 +449,7 @@ export const projects: IProject[] = [
   },
   {
     name: "Grafika - TallGuys",
-    image_path: "images/tallguys.png",
+    image_path: "images/start.png",
     deployed_url: "",
     github_url: "",
     category: ["Tiskoviny"],
@@ -458,7 +458,7 @@ export const projects: IProject[] = [
       "Zpracování grafiky pro eshop Tall guys, jako úkol v neúspěšném výběrovém řízení.",
     key_techs: ["Adobe Photoshop"],
     mockups: [
-      "images/tallguys.png",
+      "images/start.png",
       "images/tallguys-2.png",
       "images/tallguys-3.png",
     ],
