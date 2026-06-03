@@ -444,7 +444,7 @@ export const projects: IProject[] = [
       "Graphic design for the TallGuys e-shop, created as an assignment in an unsuccessful selection process.",
     key_techs: ["Adobe Photoshop"],
     mockups: [
-      "images/tallguys.png",
+      "images/start.png",
       "images/tallguys-2.png",
       "images/tallguys-3.png",
     ],
