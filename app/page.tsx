@@ -11,14 +11,14 @@ const Home = () => (
       </span>
     </h1>
     <p className="desc text-center">
-      Specializuji se na vývoj webových stránek a grafiky
+      I specialize in website development and graphic design.
     </p>
     <div className="mx-auto mt-10 flex max-w-fit space-x-4">
       <a
-        href="https://drive.google.com/file/d/1KAvxlb-Ss7OyZvmtZpvkxgi_HzSztJPf/view?usp=drive_link"
+        href="https://drive.google.com/file/d/1pPncRlVGqqnNNzcX9E8zKnqt-fCm6OUd/view?usp=sharing"
         className="rounded-full border border-black bg-black px-5 py-2 text-sm text-white shadow-lg transition-all hover:bg-white hover:text-black"
       >
-        Zobrazit CV
+        View CV
       </a>
       <a
         className="flex items-center justify-center space-x-2 rounded-full border border-gray-300 bg-white px-5 py-2 shadow-lg transition-all hover:border-gray-800"
@@ -32,7 +32,7 @@ const Home = () => (
     </div>
     <div className="mt-10 relative">
       <img
-        src="images/profile.jpg"
+        src="images/me.jpg"
         alt="profile"
         className="w-[200px] h-[200px] md:w-[300px] md:h-[300px] lg:w-[300px] lg:h-[300px] rounded-full object-cover"
       />
@@ -46,21 +46,11 @@ const Home = () => (
         <LinkedIn className="h-10 w-10 hover:border-gray-800 p-2 rounded-lg border border-gray-300 bg-white shadow-lg transition-all" />
       </a>
       <a
-        href="https://dribbble.com/pilcikpatrik"
-        target="_blank"
-        rel="noreferrer"
-      >
-        <Dribbble className="h-10 w-10 hover:border-gray-800 p-2 rounded-lg border border-gray-300 bg-white shadow-lg transition-all" />
-      </a>
-      <a
-        href="https://www.instagram.com/patriik074/"
+        href="https://www.instagram.com/pilsick/"
         target="_blank"
         rel="noreferrer"
       >
         <Instagram className="h-10 w-10 hover:border-gray-800 p-2 rounded-lg border border-gray-300 bg-white shadow-lg transition-all" />
-      </a>
-      <a href="https://twitter.com/PPilcik" target="_blank" rel="noreferrer">
-        <Twitter className="h-10 w-10 hover:border-gray-800 p-2 rounded-lg border border-gray-300 bg-white shadow-lg transition-all" />
       </a>
     </div>
   </section>

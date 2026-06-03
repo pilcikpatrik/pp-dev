@@ -4,7 +4,7 @@ import Image from "next/image";
 import { Modal, useModal } from "@nextui-org/react";
 import Github from "./shared/icons/github";
 import { Dribbble } from "lucide-react";
-import ImageSlider from './ImageSlider'
+import ImageSlider from "./ImageSlider";
 
 const ProjectCard: FunctionComponent<{
   project: IProject;
@@ -41,58 +41,57 @@ const ProjectCard: FunctionComponent<{
         closeButton
         aria-describedby="modal-description"
         animated
-        
         {...bindings}
       >
-          <div className="mx-8 mt-8">
-            <ImageSlider images={mockups} />
+        <div className="mx-8 mt-8">
+          <ImageSlider images={mockups} />
           <div className="mx-auto mt-10 flex max-w-fit space-x-4">
+            <a
+              href={deployed_url}
+              className="rounded-full border border-black bg-black px-5 py-2 text-sm text-white shadow-lg transition-all hover:bg-white hover:text-black"
+            >
+              Project
+            </a>
+            {github_url && (
               <a
-                href={deployed_url}
-                className="rounded-full border border-black bg-black px-5 py-2 text-sm text-white shadow-lg transition-all hover:bg-white hover:text-black"
+                className="flex items-center justify-center space-x-2 rounded-full border border-gray-300 bg-white px-5 py-2 shadow-lg transition-all hover:border-gray-800"
+                href={github_url}
+                target="_blank"
+                rel="noreferrer"
               >
-                Projekt
+                <Github className="h-5 w-5 text-black" />
+                <p className="text-sm">GitHub</p>
               </a>
-              {github_url && (
-                <a
-                  className="flex items-center justify-center space-x-2 rounded-full border border-gray-300 bg-white px-5 py-2 shadow-lg transition-all hover:border-gray-800"
-                  href={github_url}
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <Github className="h-5 w-5 text-black" />
-                  <p className="text-sm">GitHub</p>
-                </a>
-              )}
-              {dribble_url && (
-                <a
-                  className="flex items-center justify-center space-x-2 rounded-full border border-gray-300 bg-white px-5 py-2 shadow-lg transition-all hover:border-gray-800"
-                  href={dribble_url}
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <Dribbble className="h-5 w-5 text-black" />
-                  <p className="text-sm">Dribble</p>
-                </a>
-              )}
-            </div>
+            )}
+            {dribble_url && (
+              <a
+                className="flex items-center justify-center space-x-2 rounded-full border border-gray-300 bg-white px-5 py-2 shadow-lg transition-all hover:border-gray-800"
+                href={dribble_url}
+                target="_blank"
+                rel="noreferrer"
+              >
+                <Dribbble className="h-5 w-5 text-black" />
+                <p className="text-sm">Dribble</p>
+              </a>
+            )}
           </div>
+        </div>
 
-          <div className="m-8">
-            <h2 className="mb-3 text-xl font-medium md:text-2xl">{name}</h2>
-            <h3 className="mt-5 text-gray-600 sm:text-lg">{description}</h3>
+        <div className="m-8">
+          <h2 className="mb-3 text-xl font-medium md:text-2xl">{name}</h2>
+          <h3 className="mt-5 text-gray-600 sm:text-lg">{description}</h3>
 
-            <div className="flex flex-wrap mt-5 space-x-2 text-sm tracking-wider justify-center">
-              {key_techs.map((tech) => (
-                <span
-                  key={tech}
-                  className="px-2 py-1 my-1 bg-gray-200 dark:bg-dark-200 rounde-sm"
-                >
-                  {tech}
-                </span>
-              ))}
-            </div>
+          <div className="flex flex-wrap mt-5 space-x-2 text-sm tracking-wider justify-center">
+            {key_techs.map((tech) => (
+              <span
+                key={tech}
+                className="px-2 py-1 my-1 bg-gray-200 dark:bg-dark-200 rounde-sm"
+              >
+                {tech}
+              </span>
+            ))}
           </div>
+        </div>
       </Modal>
     </>
   );

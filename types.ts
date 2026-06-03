@@ -1,4 +1,3 @@
-
 export interface SkillsProps {
   imgSrc: string;
   percentage: string;
@@ -6,7 +5,6 @@ export interface SkillsProps {
   description: string;
   projects: string;
   experience: string;
-
 }
 
 export interface IProject {
@@ -22,6 +20,6 @@ export interface IProject {
   dribble_url: string;
 }
 
-export type Category = "Weby" | "Loga" | "Tiskoviny" | "Projekty";
+export type Category = "Websites" | "Logos" | "Print Materials" | "Projects";
 
-export type TechStack = "Javascript" | "React" | "C#" | "Nextjs" | "C++" | "C" | "Python";
+export type TechStack = "Javascript" | "React" | "Nextjs";

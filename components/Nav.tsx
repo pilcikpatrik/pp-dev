@@ -13,15 +13,17 @@ const transparentHeaderSegments = new Set([""]);
 export default function Nav() {
   const scrolled = useScroll(80);
   const segment = useSelectedLayoutSegment();
-  
+
   useEffect(() => {
     const smoothScroll = (event: MouseEvent) => {
       event.preventDefault();
-      const targetId = (event.currentTarget as HTMLAnchorElement).getAttribute("href");
-      
+      const targetId = (event.currentTarget as HTMLAnchorElement).getAttribute(
+        "href",
+      );
+
       if (targetId) {
         const targetElement = document.querySelector(targetId) as HTMLElement;
-  
+
         if (targetElement) {
           window.scrollTo({
             top: targetElement.offsetTop,
@@ -33,14 +35,13 @@ export default function Nav() {
     document.querySelectorAll('a[href^="#"]').forEach((link) => {
       link.addEventListener("click", smoothScroll as any);
     });
-  
+
     return () => {
       document.querySelectorAll('a[href^="#"]').forEach((link) => {
         link.removeEventListener("click", smoothScroll as any);
       });
     };
   }, []);
-  
 
   return (
     <div
@@ -52,13 +53,9 @@ export default function Nav() {
     >
       <MaxWidthWrapper>
         <div className="flex h-14 items-center justify-between">
-          <Link
-            href={
-              "/"
-            }
-          >
+          <Link href={"/"}>
             <img
-              src="images/profile.jpg"
+              src="images/me.jpg"
               alt="Pilčík Patrik"
               className="w-8 h-8 rounded-full object-cover object-center"
             />
@@ -71,7 +68,7 @@ export default function Nav() {
                 segment === "home" ? "text-black" : "text-gray-500"
               } transition-colors ease-out hover:text-black`}
             >
-              Domů
+              Home
             </Link>
             <Link
               href="#skills"
@@ -87,7 +84,7 @@ export default function Nav() {
                 segment === "about" ? "text-black" : "text-gray-500"
               } transition-colors ease-out hover:text-black`}
             >
-              Zkušenosti
+              Experience
             </Link>
             <Link
               href="#services"
@@ -95,7 +92,7 @@ export default function Nav() {
                 segment === "services" ? "text-black" : "text-gray-500"
               } transition-colors ease-out hover:text-black`}
             >
-              Služby
+              Services
             </Link>
             <Link
               href="#references"
@@ -103,13 +100,13 @@ export default function Nav() {
                 segment === "references" ? "text-black" : "text-gray-500"
               } transition-colors ease-out hover:text-black`}
             >
-              Reference
+              Projects
             </Link>
             <Link
               href="#contact"
               className="rounded-full border border-black bg-black px-4 py-1.5 text-sm text-white transition-all hover:bg-white hover:text-black"
             >
-              Kontakt
+              Contact
             </Link>
           </div>
         </div>
@@ -117,4 +114,3 @@ export default function Nav() {
     </div>
   );
 }
-

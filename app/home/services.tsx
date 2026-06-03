@@ -15,43 +15,35 @@ import { Link2 } from "lucide-react";
 const featureList = [
   {
     key: "analytics",
-    title: "Vývoj webových stránek",
+    title: "Website Development",
     icon: <Chart className="h-5 w-5 text-gray-600" />,
     description:
-      "Nabízím komplexní služby v oblasti vývoje webových stránek. Jedná se o custom naprogramované weby nebo weby přes Wordpress. Ať už potřebujete jednoduchou prezentaci, blog nebo složitý web, jsem připraven vám pomoci.",
+      "I offer comprehensive website development services, including custom-coded websites and WordPress websites. Whether you need a simple presentation website, a blog, or a more complex website, I am ready to help.",
     demo: "images/website.svg",
     thumbnail: "/_static/features/analytics.png",
   },
   {
-    key: "qr",
-    title: "Tvorba Eshopů",
-    icon: <QR className="h-5 w-5 text-gray-600" />,
-    description:
-      "Poskytuji profesionální služby v oblasti vývoje e-shopů. S využitím platformy Woocommerce vytvářím e-shopy, které jsou přizpůsobeny potřebám vašeho podnikání. Mým cílem je vytvořit e-shop, který je snadno použitelný, efektivní a optimalizovaný pro vyhledávače, aby vaše produkty byly snadno dostupné pro potenciální zákazníky.",
-    demo: "images/eshop.svg",
-  },
-  {
     key: "domains",
-    title: "Optimalizace a SEO webu",
+    title: "Website Optimization and SEO",
     icon: <Airplay className="h-5 w-5 text-gray-600" />,
     description:
-      "Poskytuji komplexní služby v oblasti optimalizace a SEO pro webové stránky. Tyto služby zahrnují zlepšení rychlosti načítání stránky, optimalizaci pro mobilní zařízení, vytváření SEO přátelského obsahu a další. Cílem je zvýšit viditelnost vašeho webu ve vyhledávačích a přilákat více návštěvníků.",
+      "I provide comprehensive website optimization and SEO services. These include improving page loading speed, mobile optimization, creating SEO-friendly content, and more. The goal is to increase your website’s visibility in search engines and attract more visitors.",
     demo: "images/seo.svg",
   },
   {
     key: "link",
-    title: "Tvorba loga",
+    title: "Logo Design",
     icon: <Link2 className="h-5 w-5 text-gray-600" />,
     description:
-      "Nabízím služby v oblasti tvorby loga. Vytvářím jedinečná a atraktivní loga, která odrážejí identitu vaší značky. Každé logo je vytvořeno s ohledem na vaše specifické požadavky a cíle, včetně více variací a barev.",
+      "I offer logo design services. I create unique and attractive logos that reflect your brand identity. Each logo is designed with your specific requirements and goals in mind, including multiple variations and color options.",
     demo: "images/logo.svg",
   },
   {
     key: "social",
-    title: "Grafické práce",
+    title: "Graphic Design",
     icon: <Photo className="h-5 w-5 text-gray-600" />,
     description:
-      "Nabízím širokou škálu grafických služeb, včetně tvorby letáků, brožur, vizitek a dalších marketingových materiálů. Vytvářím vizuálně poutavé a efektivní designy, které posílí vaši značku a pomohou vám dosáhnout vašich obchodních cílů.",
+      "I offer a wide range of graphic design services, including flyers, brochures, business cards, and other marketing materials. I create visually appealing and effective designs that strengthen your brand and help you achieve your business goals.",
     demo: "images/graphic.svg",
   },
   {
@@ -59,7 +51,7 @@ const featureList = [
     title: "Copywriting",
     icon: <Users className="h-5 w-5 text-gray-600" />,
     description:
-      "Nabízím copywritingové služby, které zahrnují vytváření působivých a přesvědčivých textů pro vaše webové stránky, blogy, marketingové materiály a další. Vytvářím obsah, který nejen přitahuje pozornost, ale také motivuje čtenáře k akci. Ať už potřebujete prodat produkt, sdělit svůj příběh nebo informovat své publikum.",
+      "I offer copywriting services, including engaging and persuasive texts for websites, blogs, marketing materials, and more. I create content that not only attracts attention but also motivates readers to take action. Whether you need to sell a product, tell your story, or inform your audience.",
     demo: "images/copywriting.svg",
   },
 ];
@@ -77,11 +69,12 @@ export default function Features() {
         <div className="mx-auto max-w-md text-center sm:max-w-xl">
           <h2 className="font-display text-4xl font-extrabold leading-tight text-black sm:text-5xl sm:leading-tight">
             <span className="bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
-              Služby
+              Service
             </span>{" "}
           </h2>
           <p className="mt-5 text-gray-600 sm:text-lg">
-            Nabízím širokou škálu služeb jako vývoj webů a eshopů, grafické práce nebo SEO a copywriting
+            I offer a wide range of services, including website development,
+            graphic design, SEO, and copywriting.
           </p>
         </div>
 
@@ -142,7 +135,6 @@ export default function Features() {
                           height={600}
                           className=" object-cover w-[900px] h-[600px]"
                           src={feature.demo}
-                        
                         />
                       </motion.div>
                     );
